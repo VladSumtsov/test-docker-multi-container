@@ -1,0 +1,25 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "client",
+            "image": "vladsumtsov/multi-client",
+            "hostname": "client",
+        },
+        {
+            "name": "worker",
+            "image": "vladsumtsov/multi-worker",
+            "hostname": "worker",
+        },
+        {
+            "name": "server",
+            "image": "vladsumtsov/multi-server",
+            "hostname": "server",
+        },
+        {
+            "name": "nginx",
+            "image": "vladsumtsov/multi-nginx",
+            "hostname": "nginx"
+        }
+    ]
+}
